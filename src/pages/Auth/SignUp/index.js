@@ -1,11 +1,5 @@
-import React from 'react';
+import React from "react";
 
-const index = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-};
+const SignUp = () => <div>SignUp</div>;
 
-export default index;
+export default SignUp;
