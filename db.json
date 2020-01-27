@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "marcosfrosada@mail.com",
+      "password": "$2a$10$eAkQFYFTyWQa5E7HP1yZhO1UbCJ0i1WbRdYh7NrMSmIwdZykqmwCm",
+      "firstname": "Marcos",
+      "lastname": "Rosada",
+      "age": "34",
+      "id": 1
+    }
+  ]
+}
