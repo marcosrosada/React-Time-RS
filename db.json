@@ -8,5 +8,15 @@
       "age": "34",
       "id": 1
     }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Rocketseat"
+    },
+    {
+      "id": 2,
+      "name": "Rocketseat"
+    }
   ]
 }

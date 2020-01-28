@@ -1,8 +1,23 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { TeamsActions } from "../../store/ducks/teams";
 
 import { Container, TeamList, Team } from "./styles";
 
-export default class TeamSwitcher extends Component {
+class TeamSwitcher extends Component {
+  static propTypes = {
+    getTeamsRequest: PropTypes.func.isRequired
+  };
+
+  componentDidMount() {
+    const { getTeamsRequest } = this.props;
+
+    getTeamsRequest();
+  }
+
   render() {
     return (
       <Container>
@@ -36,3 +51,12 @@ export default class TeamSwitcher extends Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  teams: state.teams
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(TeamsActions, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(TeamSwitcher);
