@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { TeamsActions } from "../../store/ducks/teams";
+import TeamsActions from "../../store/ducks/teams";
 
 import { Container, TeamList, Team } from "./styles";
 
