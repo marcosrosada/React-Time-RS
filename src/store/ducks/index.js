@@ -8,7 +8,7 @@ import { reducer as teams } from "./teams";
 export default history =>
   combineReducers({
     auth,
-    toastr,
     teams,
+    toastr,
     router: connectRouter(history)
   });

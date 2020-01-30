@@ -12,11 +12,13 @@
   "teams": [
     {
       "id": 1,
-      "name": "Rocketseat"
+      "name": "Rocketseat",
+      "slug": "rocketseat"
     },
     {
       "id": 2,
-      "name": "Rocketseat"
+      "name": "Marcos Rosada",
+      "slug": "marcos-rosada"
     }
   ]
 }
