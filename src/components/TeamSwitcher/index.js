@@ -5,6 +5,9 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import TeamsActions from "../../store/ducks/teams";
 
+import Button from "../../styles/components/Button";
+import Modal from "../Modal";
+
 import { Container, TeamList, Team, NewTeam } from "./styles";
 
 class TeamSwitcher extends Component {
@@ -36,7 +39,7 @@ class TeamSwitcher extends Component {
   };
 
   render() {
-    const { teams, openTeamModal } = this.props;
+    const { teams, openTeamModal, closeTeamModal } = this.props;
 
     return (
       <Container>
@@ -52,9 +55,23 @@ class TeamSwitcher extends Component {
 
           <NewTeam onClick={openTeamModal}>Novo</NewTeam>
 
-          {/* { teams.teamModalOpen && (
+          {teams.teamModalOpen && (
+            <Modal>
+              <h1>Criar Time</h1>
 
-          )} */}
+              <form onSubmit={() => {}}>
+                <span>Nome</span>
+                <input name="newTeam" />
+
+                <Button size="big" type="submit">
+                  Salvar
+                </Button>
+                <Button onClick={closeTeamModal} size="small" color="gray">
+                  Cancelar
+                </Button>
+              </form>
+            </Modal>
+          )}
         </TeamList>
       </Container>
     );
