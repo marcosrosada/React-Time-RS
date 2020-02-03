@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { connect } from "react-redux";
 
@@ -36,6 +37,12 @@ const Projects = ({ activeTeam }) => {
       </Project>
     </Container>
   );
+};
+
+Projects.propTypes = {
+  activeTeam: PropTypes.shape({
+    name: PropTypes.string
+  }).isRequired
 };
 
 const mapStateToProps = state => ({
