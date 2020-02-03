@@ -24,5 +24,22 @@
       "name": "New Team",
       "id": 3
     }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Projeto Rocketseat",
+      "teamId": 1
+    },
+    {
+      "id": 2,
+      "title": "Projeto React",
+      "teamId": 1
+    },
+    {
+      "id": 3,
+      "title": "Projeto Marcos Rosada",
+      "teamId": 2
+    }
   ]
 }
