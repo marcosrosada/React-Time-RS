@@ -51,5 +51,22 @@
       "teamId": 2,
       "id": 5
     }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "Gohis",
+      "teamId": 1
+    },
+    {
+      "id": 2,
+      "name": "Gabriel Ferreira",
+      "teamId": 1
+    },
+    {
+      "id": 3,
+      "name": "Marcos Rosada",
+      "teamId": 2
+    }
   ]
 }
