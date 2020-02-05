@@ -56,17 +56,56 @@
     {
       "id": 1,
       "name": "Gohis",
-      "teamId": 1
+      "teamId": 1,
+      "rolesId": []
     },
     {
       "id": 2,
       "name": "Gabriel Ferreira",
-      "teamId": 1
+      "teamId": 1,
+      "rolesId": [
+        {
+          "id": 1,
+          "name": "Administrador"
+        },
+        {
+          "id": 2,
+          "name": "Moderador"
+        }
+      ]
     },
     {
       "id": 3,
       "name": "Marcos Rosada",
-      "teamId": 2
+      "teamId": 2,
+      "rolesId": [
+        {
+          "id": 1,
+          "name": "Administrador"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Administrador"
+    },
+    {
+      "id": 2,
+      "name": "Moderador"
+    },
+    {
+      "id": 3,
+      "name": "Visitante"
+    }
+  ],
+  "invites": [
+    {
+      "email": [
+        "teste@teste.com"
+      ],
+      "id": 1
     }
   ]
 }
