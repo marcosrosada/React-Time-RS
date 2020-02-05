@@ -32,9 +32,9 @@ export function* updateMembers({ id, rolesId }) {
   }
 }
 
-export function* inviteMembers({ email }) {
+export function* inviteMembers({ email, team }) {
   try {
-    yield call(api.post, `invites`, { email: [email] });
+    yield call(api.post, `invites`, { email: [email], teamId: team.id });
 
     yield put(
       toastrActions.add({

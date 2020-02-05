@@ -64,10 +64,10 @@ class Members extends Component {
   handleInvite = e => {
     e.preventDefault();
 
-    const { inviteMemberRequest } = this.props;
+    const { inviteMemberRequest, activeTeam } = this.props;
     const { invite } = this.state;
 
-    inviteMemberRequest(invite);
+    inviteMemberRequest(invite, activeTeam);
   };
 
   render() {

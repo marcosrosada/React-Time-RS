@@ -1,6 +1,7 @@
-import { /* call, */ put } from "redux-saga/effects";
-import { push } from "connected-react-router";
+import { call, put } from "redux-saga/effects";
 import { actions as toastrActions } from "react-redux-toastr";
+import api from "../../services/api";
+import { push } from "connected-react-router";
 
 // import api from "../../services/api";
 
@@ -16,6 +17,27 @@ export function* signIn({ email, password }) {
 
     localStorage.setItem("@Omni:token", response.data);
     yield put(AuthActions.signInSuccess(response.data));
+    yield put(push("/"));
+  } catch (error) {
+    yield put(
+      toastrActions.add({
+        type: "error",
+        title: "Falha no login",
+        message: "Verifique seu e-mail/senha!"
+      })
+    );
+  }
+}
+
+export function* signUp({ name, email, password }) {
+  try {
+    const response = yield call(api.post, "users", { name, email, password });
+    const responseToken = {
+      data: response.accessToken
+    };
+
+    localStorage.setItem("@Omni:token", responseToken.data);
+    yield put(AuthActions.signInSuccess(responseToken.data));
     yield put(push("/"));
   } catch (error) {
     yield put(

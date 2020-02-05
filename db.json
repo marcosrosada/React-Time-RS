@@ -7,6 +7,18 @@
       "lastname": "Rosada",
       "age": "34",
       "id": 1
+    },
+    {
+      "email": "x@teste.com",
+      "password": "$2a$10$ohI30pedZbBMvPaFXRVKuuiKDRah1BqTEgH/gxW.mpRW8nXfaJBM2",
+      "name": "John Hemedy",
+      "id": 2
+    },
+    {
+      "email": "teste@teste.com",
+      "password": "$2a$10$kaMF9WpQzqRFS./x6cmameSmCNcViMqsH3rphu/Ne.sHgX8UBikb.",
+      "name": "John Hemedy",
+      "id": 3
     }
   ],
   "teams": [
@@ -105,6 +117,7 @@
       "email": [
         "teste@teste.com"
       ],
+      "teamId": 1,
       "id": 1
     }
   ]
