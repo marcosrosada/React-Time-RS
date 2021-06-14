@@ -1,13 +1,4 @@
 {
-  "notifications": [
-    {
-      id: 1,
-      message: "Notifications From Server";
-      title: "Title Here";
-      link: "http://Link";
-      isRead: false;
-      legalEntity: "TNC000000";
-    }],
   "users": [
     {
       "email": "marcosfrosada@gmail.com",
